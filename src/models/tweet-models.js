@@ -1,22 +1,20 @@
 const mongoose = require("mongoose");
 
-const { ObjectId } = require("bson");
-
 const tweetSchema = new mongoose.Schema({
   content: {
     type: String,
   },
-  likes: {
-    type: Number,
+  comment: {
+    type: String,
   },
   noOfRetweets: {
     type: Number,
   },
-  comment: {
-    type: String,
+  likes: {
+    type: Number,
   },
 });
 
 const Tweet = mongoose.model("Tweet", tweetSchema);
 
-module.exports = Tweet;
+module.exports = Tweet ;
