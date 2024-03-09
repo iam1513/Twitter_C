@@ -16,7 +16,7 @@ class HashtagRepo extends CrudRepo {
     }
   }
 
-  async getHastagByName(text) {
+  async findByName(text) {
     try {
       const tag = await Hashtag.find({
         text: text,

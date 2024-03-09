@@ -8,7 +8,7 @@ const likeSchema = new mongoose.Schema({
   onModel: {
     type: String,
     required: true,
-    enum: ["Tweet", "comment"],
+    enum: ["Tweet", "Comment"],
     // We have now linked like to both a comment as well as a tweet
   },
   likeable: {
@@ -18,6 +18,6 @@ const likeSchema = new mongoose.Schema({
   },
 });
 
-const like = mongoose.model("Like", likeSchema);
+const Like = mongoose.model("Like", likeSchema);
 
-module.exports = like;
+module.exports = Like;

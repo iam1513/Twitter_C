@@ -7,4 +7,19 @@
  *          - content
  *          - like
  *          - user
+ * 
+ * user 
+ *          - email
+ *          - password
+ *          - name
+
+   signIn   
+    - getUserByEmail
+    - compare password true ? signIn : Not;
+
+   isuue user a JWT token 
+    - Stored in local storage or cookies
+
+    /signIn
+    /createTweet - content,image,TOKEN --- create service
  */
